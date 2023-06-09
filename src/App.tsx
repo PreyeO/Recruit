@@ -1,12 +1,15 @@
 import './App.css'
 
+import GlobalStyles from './Components/Styles/GlobalStyles'
+
 function App() {
  
 
   return (
-    <div className='bg-blue-600'>
-     Hello world
-    </div>
+    <>
+    <GlobalStyles />
+     hello world
+    </>
   )
 }
 
