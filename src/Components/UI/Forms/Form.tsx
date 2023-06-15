@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import Button from '../Buttons/Button';
-// import TextInput from "../Inputs/TextInput"
+import TextInput from "../Inputs/TextInput"
 
 
 // interface Props {
@@ -9,7 +9,7 @@ import Button from '../Buttons/Button';
 const Form :FC = () =>{
   return (
     <form>
-      {/* <TextInput label={"Enter your first name"} type={"text"}/> */}
+      <TextInput placeholder={"Enter your first name"} type={"text"}/>
       <Button label={"Login"}/>
     </form>
   );

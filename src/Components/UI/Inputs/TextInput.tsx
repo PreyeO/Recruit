@@ -2,15 +2,13 @@ import{FC} from 'react';
 import { StyledInput } from '../../Styles/Inputs/Input.styled';
 
 interface Props {
-  label:string,
+  placeholder:string,
   type:string,
 }
 
-const TextInput :FC <Props> = ({label, type}) =>{
+const TextInput :FC <Props> = ({placeholder, type}) =>{
   return (
-    <StyledInput>
-    <input type={type} placeholder={label}/>
-    </StyledInput>
+    <StyledInput type={type} placeholder={placeholder} />
  
   );
 }
