@@ -10,7 +10,16 @@ const GlobalStyles= createGlobalStyle `
 }
 
 .body{
-  background:#A8A8A8;
+  width:100%;
+  height:100vh;
+}
+
+section{
+  padding-top:2rem;
+}
+
+.main_container{
+  padding:1.5rem
 }
 
 `
