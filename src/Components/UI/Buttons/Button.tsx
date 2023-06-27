@@ -1,18 +1,12 @@
-import {FC} from 'react';
-import { StyledButtton } from '../../Styles/Buttons/Button.styled';
+import React, { FC } from "react";
+import { StyledButtton } from "../../Styles/Buttons/Button.styled";
 
 interface Props {
-  label:string,
- 
+  children: React.ReactNode;
 }
 
-const Button :FC<Props> = ({label}) =>{
-  return (
-    <StyledButtton >
-      {label}
-      </StyledButtton>
- 
-  );
-}
+const Button: FC<Props> = ({ children }) => {
+  return <StyledButtton>{children}</StyledButtton>;
+};
 
-export default Button
+export default Button;
