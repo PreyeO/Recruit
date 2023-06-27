@@ -6,8 +6,8 @@ import SignIn from "./Pages/Authentication/SignIn";
 import SignUp from "./Pages/Authentication/SignUp";
 import VerifyDetails from "./Pages/Authentication/VerifyDetails";
 import { Container } from "./Components/Styles/General/Container.styled";
-// import CompleteProfile from './Pages/Authentication/SignUp'
-// import AddSocials from './Pages/Authentication/AddSocials'
+import CompleteProfile from './Pages/Authentication/SignUp'
+import AddSocials from './Pages/Authentication/AddSocials'
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/verifydetails" element={<VerifyDetails />} />
+          <Route path="/completeprofile" element={<CompleteProfile />} />
+          <Route path="/addsocials" element={<AddSocials />} />
         </Routes>
       </BrowserRouter>
       </Container>

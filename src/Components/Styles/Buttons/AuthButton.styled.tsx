@@ -9,8 +9,8 @@ width:20rem;
 border-radius:0.5rem;
 margin-top:1rem;
 
-&:hover{
-  background: var(--secondary-btn-color);
-  cursor:pointer
-}
+  &:hover {
+    background: var(--secondary-btn-color);
+    cursor: pointer;
+  }
 `

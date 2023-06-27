@@ -13,8 +13,6 @@ import { StyledAuthPics } from "../../Styles/AuthPage/Authpics.styled";
 
   const AuthImages:FC = () =>{
 
-
-
     return(
 
      
