@@ -2,14 +2,16 @@ import{FC} from 'react';
 
 interface Props {
   label:string
-  type:string,
+  id:any
 }
 
-const Checkbox :FC <Props> = ({label, type}) =>{
+const Checkbox :FC <Props> = ({label, id}) =>{
   return (
-    <input type={type}>
-      {label}
-    </input>
+    <div> 
+    <label htmlFor={id}>{label}</label>
+    <input type="checkbox" id={id}/>
+  </div>
+  
   );
 }
 

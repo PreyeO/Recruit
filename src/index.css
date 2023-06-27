@@ -9,8 +9,8 @@
   --secondary-btn-color: #004e98;
   --primary-text-color: rgba(255, 255, 255, 1);
   --font-size-lg: 3rem;
-  --font-size-lg: 2rem;
-  --font-size-lg: 1rem;
+  --font-size-md: 2rem;
+  --font-size-sm: 1rem;
   --color-primary-text: rgba(255, 255, 255, 1);
   --head-font: "Roboto Mono", monospace;
   --text-font: "Roboto", sans-serif;
