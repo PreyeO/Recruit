@@ -5,13 +5,13 @@ import Landing from "./Pages/LandingPage/Landing";
 import SignIn from "./Pages/Authentication/SignIn";
 import SignUp from "./Pages/Authentication/SignUp";
 import VerifyDetails from "./Pages/Authentication/VerifyDetails";
-import { Container } from "./Components/Styles/General/Container.styled";
-import CompleteProfile from './Pages/Authentication/SignUp'
-import AddSocials from './Pages/Authentication/AddSocials'
+// import { Container } from "./Components/Styles/General/Container.styled";
+import CompleteProfile from "./Pages/Authentication/CompleteProfile";
+import AddSocials from "./Pages/Authentication/AddSocials";
 
 function App() {
   return (
-    <Container>
+    <>
       <GlobalStyles />
       <BrowserRouter>
         <Routes>
@@ -23,8 +23,7 @@ function App() {
           <Route path="/addsocials" element={<AddSocials />} />
         </Routes>
       </BrowserRouter>
-      </Container>
-    
+    </>
   );
 }
 

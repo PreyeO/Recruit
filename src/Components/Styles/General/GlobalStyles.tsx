@@ -1,12 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles= createGlobalStyle `
+const GlobalStyles = createGlobalStyle`
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-styling:none;
+  list-style:none;
   outline: 0;
   border: 0;
   text-decoration: none;
@@ -15,7 +15,7 @@ const GlobalStyles= createGlobalStyle `
 
 .body{
   width:100%;
-  height:100vh;
+  height:100%;
 }
 
 section{
@@ -26,6 +26,6 @@ section{
   padding:1.5rem
 }
 
-`
+`;
 
 export default GlobalStyles;
