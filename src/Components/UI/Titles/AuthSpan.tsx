@@ -12,7 +12,7 @@ const AuthSpan :FC<Props> = ({title}) => {
 
   return(
 
-    <p className='text-center'>
+    <p className="py-1.5 font-extralight">
       {title}
     </p>
 

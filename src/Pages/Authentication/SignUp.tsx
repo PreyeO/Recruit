@@ -2,28 +2,32 @@ import { FC } from "react";
 import AuthTitle from "../../Components/UI/Titles/AuthTitle";
 import AuthSpan from "../../Components/UI/Titles/AuthSpan";
 import SignupForm from "../../Components/UI/Forms/SignupForm";
-import { StyledUserAuth } from "../../Components/Styles/AuthPage/UserAuth.styled";
 import AuthImages from "../../Components/UI/Collage/AuthImages";
-import AuthImage from "../../assets/AuthImage.png";
+import { Container } from "../../Components/Styles/General/Container.styled";
+import SignupSocials from "../../Components/UI/Forms/SignupSocials";
+
 
 // interface Props {
 // }
 
 const SignUp: FC = () => {
   return (
-    <main>
-      <StyledUserAuth>
-        <div>
-          {/* <AuthImages /> */}
-          <img src={AuthImage} alt="image" />
-        </div>
-        <div>
+    <Container>
+      <div className="flex justify-between font-plusJakarta items-center gap-12">
+         <AuthImages />
+         <div className="flex flex-col">
+         <div className="text-center">
           <AuthTitle title="Hello! Welcome." />
           <AuthSpan title="Create an accout below" />
+         </div>
+         <SignupSocials />
+         <div className="text-center font-extralight py-1.5">or</div>
+        
           <SignupForm />
-        </div>
-      </StyledUserAuth>
-    </main>
+         
+          </div>
+          </div>
+      </Container>
   );
 };
 

@@ -2,7 +2,9 @@ import {FC} from 'react';
 import AuthTitle from '../../Components/UI/Titles/AuthTitle';
 import AuthSpan from '../../Components/UI/Titles/AuthSpan';
 import SigninForm from '../../Components/UI/Forms/SigninForm';
-import { StyledUserAuth } from '../../Components/Styles/AuthPage/UserAuth.styled';
+import { Container } from '../../Components/Styles/General/Container.styled';
+import AuthImages from '../../Components/UI/Collage/AuthImages';
+import SignupSocials from '../../Components/UI/Forms/SignupSocials';
 
 
 // interface Props {
@@ -10,18 +12,22 @@ import { StyledUserAuth } from '../../Components/Styles/AuthPage/UserAuth.styled
 
 const SignIn :FC = () =>{
   return (
-    <main>
-      <StyledUserAuth>
-      <div>
-          Hello my guy
-          </div>
-          <div>
+    <Container>
+       <div className="flex justify-between font-plusJakarta items-center gap-12">
+       <AuthImages />
+          <div className="flex flex-col">
+         <div className="text-center">
         <AuthTitle title="Welcome Back"/>
-        <AuthSpan title="We've missed you. Sign up to catchup on what you've missed."/>
+        <AuthSpan title="We've missed you. Please signin to catch up on what you've missed."/>
+        </div>
+        <div>
+        <SignupSocials />
+        </div>
+        <div className="text-center font-extralight py-1.5">or</div>
         <SigninForm />
         </div>
-      </StyledUserAuth>
-    </main>
+        </div>
+      </Container>
   );
 }
 

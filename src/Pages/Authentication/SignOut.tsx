@@ -1,13 +1,14 @@
 import {FC} from 'react';
+import { Container } from '../../Components/Styles/General/Container.styled';
 
 // interface Props {
 // }
 
 const SignOut :FC = () =>{
   return (
-    <main>
+    <Container>
       Welcome to SignOut Page.
-    </main>
+    </Container>
   );
 }
 

@@ -6,7 +6,7 @@ interface Props {
 
 const AuthTitle :FC <Props> = ({title}) =>{
   return (
-    <h1 className='text-center'>{title}</h1>
+    <h1 className="font-extrabold text-3xl">{title}</h1>
   );
 }
 

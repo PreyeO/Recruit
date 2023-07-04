@@ -1,5 +1,4 @@
 import { LineNav, TimelineNav } from "./TimelineNav";
-// import TextInput from "../../Components/UI/Inputs/TextInput";
 import { Container } from "../../Components/Styles/General/Container.styled";
 import AuthButton from "../../Components/UI/Buttons/AuthButton";
 import AddSocialsForm from "../../Components/UI/Forms/AddSocialsForm";
