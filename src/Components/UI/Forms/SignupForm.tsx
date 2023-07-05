@@ -3,6 +3,8 @@ import AuthButton from "../Buttons/AuthButton";
 import TextInput from "../Inputs/TextInput";
 import Checkbox from "../Inputs/CheckBox";
 import PasswordReset from "../Buttons/PasswordReset";
+import AuthSpan from "../Titles/AuthSpan";
+import { Link } from "react-router-dom";
 
 // interface Props {
 // }
@@ -40,10 +42,16 @@ const SignupForm: FC = () => {
         label="Confirm Password"
         id="id"
       />
-      <AuthButton label={"Login"} />
       <div className="flex justify-around text-sm">
         <Checkbox label={"Agree to Terms and Policy"} id="id" />
         <PasswordReset label={"Forgot Password"} />
+      </div>
+      <AuthButton label={"Continue"} />
+      <div className="flex flex-row gap-2 justify-center">
+        <AuthSpan title={"Already have an account? "} />
+        <Link to="/signin" className="text-blue-500 pt-1">
+          Login
+        </Link>
       </div>
     </form>
   );
