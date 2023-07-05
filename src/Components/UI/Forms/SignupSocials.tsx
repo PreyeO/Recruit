@@ -1,18 +1,19 @@
 import { FC } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 
 const SignupSocials: FC = () => {
   return (
-    <form className="flex flex-row justify-center gap-4 py-3.5">
-      <button className="rounded-full p-1 border">
+    <form className="flex flex-row justify-center gap-8 py-3.5">
+      <button className="rounded-full p-3 border border-solid border-primary-btn">
         <FcGoogle className="h-7 w-7" />
       </button>
-      <button>
+      <button className="rounded-full p-3 border border-solid border-primary-btn">
         <AiOutlineGithub className="h-7 w-7" />
       </button>
-      <button>
-        <AiOutlineLinkedin className="h-7 w-7 text-white bg-blue-500" />
+      <button className="rounded-full p-3 border border-solid border-primary-btn">
+        <FaLinkedin className="h-7 w-7 text-white bg-blue-500" />
       </button>
     </form>
   );

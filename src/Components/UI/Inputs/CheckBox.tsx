@@ -7,7 +7,7 @@ interface Props {
 
 const Checkbox: FC<Props> = ({ label, id }) => {
   return (
-    <div>
+    <div className="flex items-center gap-1">
       <input type="checkbox" id={id} className="w-[20px] h-[15px]" />
       <label htmlFor={id}>{label}</label>
     </div>

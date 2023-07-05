@@ -41,7 +41,7 @@ const SignupForm: FC = () => {
         id="id"
       />
       <AuthButton label={"Login"} />
-      <div className="flex justify-around text-sm">
+      <div className="flex justify-between text-sm">
         <Checkbox label={"Agree to Terms and Policy"} id="id" />
         <PasswordReset label={"Forgot Password"} />
       </div>
