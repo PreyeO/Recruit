@@ -12,17 +12,17 @@ import SignupSocials from "../../Components/UI/Forms/SignupSocials";
 const SignIn: FC = () => {
   return (
     <Container>
-      <div className="flex w-full justify-around font-plusJakarta items-center">
+      <div className="flex w-full justify-around font-plusJakarta items-center gap-8 px-6">
         <AuthImages />
-        <div className="flex flex-col pt-10">
-          <div className="text-center">
+        <div className="flex flex-col pt-10 items-center">
+          <div className="text-center w-[275px]">
             <AuthTitle title="Welcome Back" />
             <AuthSpan title="We've missed you. Please signin to catch up on what you've missed." />
           </div>
           <div>
             <SignupSocials />
           </div>
-          <div className="text-center font-extralight py-1.5">or</div>
+          <div className="font-extralight py-1.5">or</div>
           <SigninForm />
         </div>
       </div>
