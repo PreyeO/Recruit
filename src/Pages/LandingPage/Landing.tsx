@@ -1,13 +1,14 @@
 import {FC} from 'react';
+import { Container } from '../../Components/Styles/General/Container.styled';
 
 // interface Props {
 // }
 
 const Landing :FC = () =>{
   return (
-    <main>
+    <Container>
       WELCOME TO HOME PAGE
-    </main>
+    </Container>
   );
 }
 
