@@ -13,9 +13,11 @@ import SignupSocials from "../../Components/UI/Forms/SignupSocials";
 const SignUp: FC = () => {
   return (
     <Container>
-      <div className="flex justify-between font-plusJakarta items-center gap-12">
+      <div className="flex w-full justify-around font-plusJakarta items-center overflow-hidden">
+        <div>
          <AuthImages />
-         <div className="flex flex-col">
+         </div>
+         <div className="flex flex-col pt-10">
          <div className="text-center">
           <AuthTitle title="Hello! Welcome." />
           <AuthSpan title="Create an accout below" />

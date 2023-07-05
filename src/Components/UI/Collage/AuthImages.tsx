@@ -8,12 +8,10 @@ import AuthImage from '../../../assets/AuthImage.png'
 
     return(
 
-      <figure>
+     
       <StyledAuthPics>
-        <img src={AuthImage} alt='' />
+        <img src={AuthImage} alt=''/>
         </StyledAuthPics>
-        
-      </figure>
      
     )
   }
