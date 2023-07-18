@@ -8,12 +8,15 @@ import VerifyDetails from "./Pages/Authentication/VerifyDetails";
 // import { Container } from "./Components/Styles/General/Container.styled";
 import CompleteProfile from "./Pages/Authentication/CompleteProfile";
 import AddSocials from "./Pages/Authentication/AddSocials";
+import Profile from "./Pages/ProfilePage/Profile";
+import NavBar from "./Layouts/NavBar/NavBar";
 
 function App() {
   return (
     <>
       <GlobalStyles />
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/signin" element={<SignIn />} />
@@ -21,6 +24,7 @@ function App() {
           <Route path="/verifydetails" element={<VerifyDetails />} />
           <Route path="/completeprofile" element={<CompleteProfile />} />
           <Route path="/addsocials" element={<AddSocials />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>
