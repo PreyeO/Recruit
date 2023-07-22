@@ -1,5 +1,6 @@
 import Qualification from "./Qualification";
 import Reviews from "./Reviews";
+import UserProficiencies from "./UserProficiencies";
 import Works from "./Works";
 
 const FullProfile = () => {
@@ -9,6 +10,7 @@ const FullProfile = () => {
       <Qualification />
       <Reviews />
       <Works />
+      <UserProficiencies />
     </section>
   );
 };
