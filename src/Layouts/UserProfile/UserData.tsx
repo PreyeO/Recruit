@@ -27,3 +27,18 @@ export const datas = [
     ],
   },
 ];
+
+export const reviews = [
+  {
+    id: 1,
+    author: "John Doe",
+    content:
+      "I had the pleasure of working with Brooklyn on a software development project, and I am delighted to provide this review of their exceptional skills and contributions. As a highly talented and dedicated software developer, Brooklyn exceeded all expectations and played a pivotal role in the project's success",
+  },
+  {
+    id: 2,
+    author: "Jane Smith",
+    content:
+      "I had the pleasure of working with Brooklyn on a software development project, and I am delighted to provide this review of their exceptional skills and contributions. As a highly talented and dedicated software developer, Brooklyn exceeded all expectations and played a pivotal role in the project's success",
+  },
+];

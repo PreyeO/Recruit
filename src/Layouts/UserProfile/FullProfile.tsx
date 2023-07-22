@@ -6,11 +6,12 @@ import Works from "./Works";
 const FullProfile = () => {
   return (
     <section>
-      <h1>Welcome to Full Profile</h1>
       <Qualification />
       <Reviews />
       <Works />
-      <UserProficiencies />
+      <aside>
+        <UserProficiencies />
+      </aside>
     </section>
   );
 };

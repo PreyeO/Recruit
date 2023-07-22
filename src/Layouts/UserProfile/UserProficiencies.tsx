@@ -11,7 +11,7 @@ const UserProficiencies = () => {
               {data.skills.map((skill, index) => (
                 <li
                   key={index}
-                  className="bg-blue-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2"
+                  className="bg-blue-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2 w-40"
                 >
                   {skill.icon}
                   {skill.title}
@@ -25,7 +25,7 @@ const UserProficiencies = () => {
               {data.tools.map((tool, index) => (
                 <li
                   key={index}
-                  className="bg-orange-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2"
+                  className="bg-orange-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2 w-40"
                 >
                   {tool.icon}
                   {tool.title}

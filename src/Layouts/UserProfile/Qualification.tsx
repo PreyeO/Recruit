@@ -1,7 +1,10 @@
 const Qualification = () => {
   return (
     <section>
-      <h1>qualification here</h1>
+      <div>
+        <h1>qualification here</h1>
+      </div>
+      <div></div>
     </section>
   );
 };
