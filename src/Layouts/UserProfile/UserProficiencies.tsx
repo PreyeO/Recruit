@@ -4,14 +4,14 @@ const UserProficiencies = () => {
   return (
     <div>
       {datas.map((data) => (
-        <div key={data.id} className="flex flex-col justify-center gap-12">
+        <div key={data.id} className="flex flex-col justify-center gap-8">
           <div>
             <h2>Skills</h2>
             <ul>
               {data.skills.map((skill, index) => (
                 <li
                   key={index}
-                  className="text-white bg-blue-500 flex items-center gap-2"
+                  className="bg-blue-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2"
                 >
                   {skill.icon}
                   {skill.title}
@@ -25,7 +25,7 @@ const UserProficiencies = () => {
               {data.tools.map((tool, index) => (
                 <li
                   key={index}
-                  className="text-white bg-orange-500 flex items-center gap-2"
+                  className="bg-orange-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2"
                 >
                   {tool.icon}
                   {tool.title}
