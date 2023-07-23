@@ -10,8 +10,5 @@ export const StyledProficiencyCard = styled.div`
   flex-direction: column;
   gap: 1rem;
   max-width: 15rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   align-items: center;
 `;

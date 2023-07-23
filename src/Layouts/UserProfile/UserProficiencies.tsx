@@ -12,13 +12,14 @@ const UserProficiencies = () => {
               {data.skills.map((skill, index) => (
                 <li
                   key={index}
-                  className="bg-blue-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2 w-40"
+                  className="bg-blue-500 text-white rounded-lg px-4 py-2 flex items-center gap-6 my-2 w-40"
                 >
                   {skill.icon}
                   {skill.title}
                 </li>
               ))}
             </ul>
+            <button className="font-light">5+ more</button>
           </StyledProficiencyCard>
           <StyledProficiencyCard>
             <h2>Tools</h2>
@@ -26,13 +27,14 @@ const UserProficiencies = () => {
               {data.tools.map((tool, index) => (
                 <li
                   key={index}
-                  className="bg-orange-500 text-white rounded-lg px-4 py-2 flex items-center gap-8 my-2 w-40"
+                  className="bg-orange-500 text-white rounded-lg px-4 py-2 flex items-center gap-6 my-2 w-40"
                 >
                   {tool.icon}
                   {tool.title}
                 </li>
               ))}
             </ul>
+            <button className="font-light">5+ more</button>
           </StyledProficiencyCard>
 
           <StyledProficiencyCard>
@@ -41,7 +43,7 @@ const UserProficiencies = () => {
               {data.experiences.map((experience, index) => (
                 <li key={index} className="px-2 py-2 items-center my-2 w-40">
                   <div className="flex gap-6">
-                    <div style={{ fontSize: "1.5rem" }}>{experience.icon}</div>
+                    <div>{experience.icon}</div>
                     <div>
                       {experience.title}
                       <div className="font-light">{experience.company}</div>
@@ -50,6 +52,7 @@ const UserProficiencies = () => {
                 </li>
               ))}
             </ul>
+            <button className="font-light">5+ more</button>
           </StyledProficiencyCard>
         </div>
       ))}

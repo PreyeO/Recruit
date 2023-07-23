@@ -16,29 +16,33 @@ export const datas = [
   {
     id: 1,
     skills: [
-      { title: "REACT", icon: <RiReactjsFill /> },
-      { title: "VUE3", icon: <RiVuejsFill /> },
-      { title: "CSS", icon: <RiCss3Fill /> },
-      { title: "Angular", icon: <RiAngularjsFill /> },
-      { title: "HTML5", icon: <RiHtml5Fill /> },
+      { title: "REACT", icon: <RiReactjsFill size={20} /> },
+      { title: "VUE3", icon: <RiVuejsFill size={20} /> },
+      { title: "CSS", icon: <RiCss3Fill size={20} /> },
+      { title: "Angular", icon: <RiAngularjsFill size={20} /> },
+      { title: "HTML5", icon: <RiHtml5Fill size={20} /> },
     ],
     tools: [
-      { title: "Coder Box", icon: <RiCodeBoxFill /> },
-      { title: "GitLab", icon: <AiFillGitlab /> },
-      { title: "GitHub", icon: <AiFillGithub /> },
-      { title: "Bootstrap", icon: <BsBootstrap /> },
+      { title: "Coder Box", icon: <RiCodeBoxFill size={20} /> },
+      { title: "GitLab", icon: <AiFillGitlab size={20} /> },
+      { title: "GitHub", icon: <AiFillGithub size={20} /> },
+      { title: "Bootstrap", icon: <BsBootstrap size={20} /> },
     ],
 
     experiences: [
-      { title: "Fullstack Dev", icon: <RiGoogleFill />, company: "Google" },
+      {
+        title: "Fullstack Dev",
+        icon: <RiGoogleFill size={25} />,
+        company: "Google",
+      },
       {
         title: "Frontend Dev",
-        icon: <RiFacebookFill />,
+        icon: <RiFacebookFill size={25} />,
         company: "Facebook Meta",
       },
       {
         title: "Software Intern",
-        icon: <RiMicrosoftFill />,
+        icon: <RiMicrosoftFill size={25} />,
         company: "Microsoft",
       },
     ],
@@ -72,5 +76,39 @@ export const qualifications = [
     name: "Jobberman Soft-Skill Trainning",
     title: "Jobberman Nigeria",
     date: "issued sep 2022",
+  },
+];
+
+export const works = [
+  {
+    id: 1,
+    title: "Care Finder",
+    description: "This app is used to locate hospitals in a region.",
+  },
+  {
+    id: 2,
+    title: "Baby-Cry translator",
+    description: "This app transcribes babies cries.",
+  },
+  {
+    id: 3,
+    title: "Chatter",
+    description:
+      "This is a social media platform for writters to share their works.",
+  },
+  {
+    id: 4,
+    title: "Fast Pay",
+    description: "This is a payment platform.",
+  },
+  {
+    id: 5,
+    title: "Ready2Mingle",
+    description: "This is a dating site.",
+  },
+  {
+    id: 6,
+    title: "Blossom Academy",
+    description: "This is an online learning platform for kids.",
   },
 ];
