@@ -5,12 +5,10 @@ import {
   RiCss3Fill,
   RiAngularjsFill,
   RiCodeBoxFill,
-  RiGoogleFill,
-  RiFacebookFill,
-  RiMicrosoftFill,
 } from "react-icons/ri";
 import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
-import { BsBootstrap } from "react-icons/bs";
+import { BsBootstrap, BsFacebook, BsMicrosoft } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
 
 export const datas = [
   {
@@ -32,17 +30,17 @@ export const datas = [
     experiences: [
       {
         title: "Fullstack Dev",
-        icon: <RiGoogleFill size={25} />,
+        icon: <FcGoogle size={25} />,
         company: "Google",
       },
       {
         title: "Frontend Dev",
-        icon: <RiFacebookFill size={25} />,
+        icon: <BsFacebook size={25} />,
         company: "Facebook Meta",
       },
       {
         title: "Software Intern",
-        icon: <RiMicrosoftFill size={25} />,
+        icon: <BsMicrosoft size={25} />,
         company: "Microsoft",
       },
     ],
