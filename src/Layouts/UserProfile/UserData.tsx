@@ -5,6 +5,9 @@ import {
   RiCss3Fill,
   RiAngularjsFill,
   RiCodeBoxFill,
+  RiGoogleFill,
+  RiFacebookFill,
+  RiMicrosoftFill,
 } from "react-icons/ri";
 import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
 import { BsBootstrap } from "react-icons/bs";
@@ -24,6 +27,20 @@ export const datas = [
       { title: "GitLab", icon: <AiFillGitlab /> },
       { title: "GitHub", icon: <AiFillGithub /> },
       { title: "Bootstrap", icon: <BsBootstrap /> },
+    ],
+
+    experiences: [
+      { title: "Fullstack Dev", icon: <RiGoogleFill />, company: "Google" },
+      {
+        title: "Frontend Dev",
+        icon: <RiFacebookFill />,
+        company: "Facebook Meta",
+      },
+      {
+        title: "Software Intern",
+        icon: <RiMicrosoftFill />,
+        company: "Microsoft",
+      },
     ],
   },
 ];

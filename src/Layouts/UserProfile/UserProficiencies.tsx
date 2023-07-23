@@ -1,3 +1,4 @@
+import { StyledProficiencyCard } from "../../Components/Styles/Cards/ProficiencyCard.styled";
 import { datas } from "./UserData";
 
 const UserProficiencies = () => {
@@ -5,7 +6,7 @@ const UserProficiencies = () => {
     <div>
       {datas.map((data) => (
         <div key={data.id} className="flex flex-col justify-center gap-8">
-          <div>
+          <StyledProficiencyCard>
             <h2>Skills</h2>
             <ul>
               {data.skills.map((skill, index) => (
@@ -18,8 +19,8 @@ const UserProficiencies = () => {
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
+          </StyledProficiencyCard>
+          <StyledProficiencyCard>
             <h2>Tools</h2>
             <ul>
               {data.tools.map((tool, index) => (
@@ -32,7 +33,24 @@ const UserProficiencies = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </StyledProficiencyCard>
+
+          <StyledProficiencyCard>
+            <h2>Experience</h2>
+            <ul>
+              {data.experiences.map((experience, index) => (
+                <li key={index} className="px-2 py-2 items-center my-2 w-40">
+                  <div className="flex gap-6">
+                    <div style={{ fontSize: "1.5rem" }}>{experience.icon}</div>
+                    <div>
+                      {experience.title}
+                      <div className="font-light">{experience.company}</div>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </StyledProficiencyCard>
         </div>
       ))}
     </div>
