@@ -42,3 +42,18 @@ export const reviews = [
       "I had the pleasure of working with Brooklyn on a software development project, and I am delighted to provide this review of their exceptional skills and contributions. As a highly talented and dedicated software developer, Brooklyn exceeded all expectations and played a pivotal role in the project's success",
   },
 ];
+
+export const qualifications = [
+  {
+    id: 1,
+    name: "University of Ilorin",
+    title: "Bachelor of Sciences - Mathematics",
+    date: "2018-2023",
+  },
+  {
+    id: 2,
+    name: "Jobberman Soft-Skill Trainning",
+    title: "Jobberman Nigeria",
+    date: "issued sep 2022",
+  },
+];
