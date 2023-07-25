@@ -19,15 +19,17 @@ const ProfileNav = ({ links }: Props) => {
         <div className="gap-20 text-dark-gray flex items-start">
           {navWER.map((link, index) => (
             <div
-              className={`flex gap-2 items-center ${
-                currentIndex === index ? "text-rose-600" : "text-dark-gray"
+              className={`flex gap-2 items-center cursor-pointer ${
+                currentIndex === index
+                  ? "primary-dark border-b-2 border-rose-600"
+                  : "text-dark-gray"
               }`}
               id={link.id}
               onClick={() => cycleLinks(index)}
               key={link.id}
             >
               {link.icon}
-              <p className="text-2xl font-bold cursor-pointer">{link.name}</p>
+              <p className="text-2xl font-bold">{link.name}</p>
             </div>
           ))}
         </div>
