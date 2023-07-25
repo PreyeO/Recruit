@@ -1,18 +1,11 @@
 import {
   RiReactjsFill,
   RiVuejsFill,
-  RiHtml5Fill,
-  RiCss3Fill,
   RiAngularjsFill,
   RiCodeBoxFill,
 } from "react-icons/ri";
 import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
-import {
-  BsBootstrap,
-  BsFacebook,
-  BsMicrosoft,
-  BsBriefcase,
-} from "react-icons/bs";
+import { BsFacebook, BsMicrosoft, BsBriefcase } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { LuGraduationCap } from "react-icons/lu";
 import { FaRegComments } from "react-icons/fa";
@@ -24,14 +17,11 @@ export const datas = [
       { title: "REACT", icon: <RiReactjsFill size={20} /> },
       { title: "VUE3", icon: <RiVuejsFill size={20} /> },
       { title: "Angular", icon: <RiAngularjsFill size={20} /> },
-      // { title: "CSS", icon: <RiCss3Fill size={20} /> },
-      // { title: "HTML5", icon: <RiHtml5Fill size={20} /> },
     ],
     tools: [
       { title: "Coder Box", icon: <RiCodeBoxFill size={20} /> },
       { title: "GitLab", icon: <AiFillGitlab size={20} /> },
       { title: "GitHub", icon: <AiFillGithub size={20} /> },
-      // { title: "Bootstrap", icon: <BsBootstrap size={20} /> },
     ],
 
     experiences: [
