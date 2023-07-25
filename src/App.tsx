@@ -8,7 +8,7 @@ import CompleteProfile from "./Pages/Authentication/CompleteProfile";
 import AddSocials from "./Pages/Authentication/AddSocials";
 import Profile from "./Pages/ProfilePage/Profile";
 import NavBar from "./Layouts/NavBar/NavBar";
-// import Footer from "./Layouts/Footer/Footer";
+import Footer from "./Layouts/Footer/Footer";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/addsocials" element={<AddSocials />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

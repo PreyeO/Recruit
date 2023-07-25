@@ -1,4 +1,3 @@
-import Footer from "../Footer/Footer";
 import Qualification from "./Qualification";
 import Reviews from "./Reviews";
 import UserProficiencies from "./UserProficiencies";
@@ -13,7 +12,6 @@ const FullProfile = () => {
       <aside>
         <UserProficiencies />
       </aside>
-      <Footer />
     </section>
   );
 };
