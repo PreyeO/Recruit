@@ -6,7 +6,8 @@ export default {
       colors: {
         "primary-btn": "#284B63",
         "dark-blue": "#004e98",
-        "light-gray": "#7a7a7a"
+        "light-gray": "#7a7a7a",
+        "dark-gray": "#333333",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

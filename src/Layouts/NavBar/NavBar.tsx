@@ -9,7 +9,7 @@ const NavBar = () => {
       <div className="flex gap-4 items-center">
         <img src={Logo2} alt="logo" />
       </div>
-      <ul className="hidden gap-[60px] text-xl text-light-gray lg:flex">
+      <ul className="hidden gap-[60px] text-xl text-light-gray lg:flex hover:text-primary-btn">
         <li>
           <Link to="/">Home</Link>
         </li>

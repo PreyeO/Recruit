@@ -18,9 +18,9 @@ const GlobalStyles = createGlobalStyle`
   height:100vh;
 }
 
-section{
+/* section{
   padding-top:2rem;
-}
+} */
 
 .main_container{
   padding:1.5rem

@@ -1,11 +1,13 @@
-import { Container } from "../../Components/Styles/General/Container.styled";
+import { ProfileContainer } from "../../Components/Styles/General/ProfileContainer.styled";
 import FullProfile from "../../Layouts/UserProfile/FullProfile";
+import ProfileInfo from "../../Layouts/UserProfile/ProfileInfo";
 
 const Profile = () => {
   return (
-    <Container>
+    <ProfileContainer>
+      <ProfileInfo />
       <FullProfile />
-    </Container>
+    </ProfileContainer>
   );
 };
 

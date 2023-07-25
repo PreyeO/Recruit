@@ -4,13 +4,11 @@ import Projectlogo from "../../assets/Project.svg";
 
 const Works = () => {
   return (
-    <section>
-      <h2 className="text-2xl font-bold mb-4">Qualification</h2>
-
-      <ul>
+    <section className="mt-6">
+      <ul className="flex gap-9 flex-wrap">
         {works.map((work) => (
-          <li key={work.id} className="mb-4 w-2/3 ">
-            <StyledProficiencyCard>
+          <li key={work.id}>
+            <StyledProficiencyCard width="280px" className="h-[420px]">
               <div>
                 <figure>
                   <img src={Projectlogo} alt="school logo" />

@@ -7,8 +7,15 @@ import {
   RiCodeBoxFill,
 } from "react-icons/ri";
 import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
-import { BsBootstrap, BsFacebook, BsMicrosoft } from "react-icons/bs";
+import {
+  BsBootstrap,
+  BsFacebook,
+  BsMicrosoft,
+  BsBriefcase,
+} from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
+import { LuGraduationCap } from "react-icons/lu";
+import { FaRegComments } from "react-icons/fa";
 
 export const datas = [
   {
@@ -16,35 +23,41 @@ export const datas = [
     skills: [
       { title: "REACT", icon: <RiReactjsFill size={20} /> },
       { title: "VUE3", icon: <RiVuejsFill size={20} /> },
-      { title: "CSS", icon: <RiCss3Fill size={20} /> },
       { title: "Angular", icon: <RiAngularjsFill size={20} /> },
-      { title: "HTML5", icon: <RiHtml5Fill size={20} /> },
+      // { title: "CSS", icon: <RiCss3Fill size={20} /> },
+      // { title: "HTML5", icon: <RiHtml5Fill size={20} /> },
     ],
     tools: [
       { title: "Coder Box", icon: <RiCodeBoxFill size={20} /> },
       { title: "GitLab", icon: <AiFillGitlab size={20} /> },
       { title: "GitHub", icon: <AiFillGithub size={20} /> },
-      { title: "Bootstrap", icon: <BsBootstrap size={20} /> },
+      // { title: "Bootstrap", icon: <BsBootstrap size={20} /> },
     ],
 
     experiences: [
       {
         title: "Fullstack Dev",
-        icon: <FcGoogle size={25} />,
+        icon: <FcGoogle size={30} />,
         company: "Google",
       },
       {
         title: "Frontend Dev",
-        icon: <BsFacebook size={25} />,
+        icon: <BsFacebook size={30} />,
         company: "Facebook Meta",
       },
       {
         title: "Software Intern",
-        icon: <BsMicrosoft size={25} />,
+        icon: <BsMicrosoft size={30} />,
         company: "Microsoft",
       },
     ],
   },
+];
+
+export const navWER = [
+  { id: "1", name: "Works", icon: <BsBriefcase size={24} /> },
+  { id: "2", name: "Education", icon: <LuGraduationCap size={28} /> },
+  { id: "3", name: "Reviews", icon: <FaRegComments size={28} /> },
 ];
 
 export const reviews = [
@@ -67,13 +80,13 @@ export const qualifications = [
     id: 1,
     name: "University of Ilorin",
     title: "Bachelor of Sciences - Mathematics",
-    date: "2018-2023",
+    date: "Sep 2018-2023",
   },
   {
     id: 2,
     name: "Jobberman Soft-Skill Trainning",
     title: "Jobberman Nigeria",
-    date: "issued sep 2022",
+    date: "Issued Sep 2022",
   },
 ];
 
