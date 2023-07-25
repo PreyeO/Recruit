@@ -1,16 +1,14 @@
 import { StyledProfileCrd } from "../../Components/Styles/Cards/ProfileCard.styled";
 import { reviews } from "./UserData";
 import Avatar from "../../assets/ReviewerAvatar.svg";
-import Rating from "../../assets/Ratings.svg";
+import { BsStarFill, BsStar } from "react-icons/bs";
 
 const Reviews = () => {
   return (
-    <section>
-      <h2 className="text-2xl font-bold mb-4">Reviews</h2>
-
+    <section className="mt-6">
       <ul>
         {reviews.map((review) => (
-          <li key={review.id} className="mb-4 w-1/3 ">
+          <li key={review.id} className="mb-4">
             <StyledProfileCrd>
               <div className="flex gap-10">
                 <div>
@@ -20,9 +18,10 @@ const Reviews = () => {
                 </div>
                 <div>
                   <p className="font-semibold">{review.author}</p>
-                  <figure className="pt-4">
-                    <img src={Rating} alt="ratings" />
-                  </figure>
+                  <div className="pt-4 flex gap-[3px] text-primary-btn">
+                    <BsStarFill /> <BsStarFill />
+                    <BsStarFill /> <BsStar /> <BsStar />
+                  </div>
                   <p className="text-gray-600 pt-4">{review.content}</p>
                 </div>
               </div>
