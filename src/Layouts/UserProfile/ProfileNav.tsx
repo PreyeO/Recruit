@@ -16,12 +16,12 @@ const ProfileNav = ({ links }: Props) => {
   return (
     <>
       <div className="flex justify-between h-11 border-b-[1px] border-[#f1f1f1] border-solid">
-        <div className="gap-20 text-dark-gray flex items-start">
+        <div className="gap-20 text-dark-gray flex items-start relative">
           {navWER.map((link, index) => (
             <div
-              className={`flex gap-2 items-center cursor-pointer ${
+              className={`flex gap-2 items-center cursor-pointer hover:text-primary-dark ${
                 currentIndex === index
-                  ? "primary-dark border-b-2 border-rose-600"
+                  ? "text-primary-btn border-b-4 border-primary-btn border-solid pb-2"
                   : "text-dark-gray"
               }`}
               id={link.id}
