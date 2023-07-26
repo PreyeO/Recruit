@@ -9,6 +9,7 @@ export const StyledFooter = styled.footer`
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
+    margin-top: 1rem;
   }
   .footer_btn {
     flex-direction: column;

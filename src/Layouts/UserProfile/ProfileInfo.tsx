@@ -2,9 +2,7 @@ import ProfilePic from "../../assets/profilepic.png";
 import EditTwo from "../../assets/editIconII.png";
 import { BsStarFill, BsStar } from "react-icons/bs";
 
-type Props = {};
-
-const ProfileInfo = (props: Props) => {
+const ProfileInfo = () => {
   return (
     <section className="mb-16">
       <div className="absolute w-full h-[280px] bg-primary-btn left-0 z-[-1]"></div>
@@ -18,7 +16,7 @@ const ProfileInfo = (props: Props) => {
           <div className="w-[3px] h-20 bg-light-gray" />
           <div className="max-w-[544px]">
             <p className="font-semibold">
-              David is a mobile app developer with expertise in iOS and Android
+              I am a mobile app developer with expertise in iOS and Android
               platforms.
             </p>
             <div className="flex gap-[3px] items-center pt-3 text-primary-btn">
