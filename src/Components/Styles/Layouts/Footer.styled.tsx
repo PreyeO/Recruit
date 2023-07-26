@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const StyledFooter = styled.footer`
-  background: black;
+export const StyledFooter = styled.div`
   color: white;
   .first_container {
     display: flex;

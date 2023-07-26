@@ -8,11 +8,11 @@ const FullProfile = () => {
   const links = [<Works />, <Qualification />, <Reviews />];
 
   return (
-    <section className="flex lg:gap-20 xs:gap-0">
+    <section className="flex lg:gap-20 xs:gap-0 mb-8">
       <aside className="xs:basis-1/5 lg:basis-0">
         <UserProficiencies />
       </aside>
-      <div className="lg:basis-4/5 xs:basis-0">
+      <div className="lg:basis-4/5 xs:basis-0 w-full">
         <ProfileNav links={links} />
       </div>
     </section>
