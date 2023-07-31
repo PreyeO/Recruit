@@ -26,8 +26,8 @@ function App() {
           <Route path="/addsocials" element={<AddSocials />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
-        {/* <Footer /> */}
-        <FooterPreye />
+        <Footer />
+        {/* <FooterPreye /> */}
       </BrowserRouter>
     </>
   );
