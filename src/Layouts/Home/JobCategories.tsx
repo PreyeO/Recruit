@@ -8,30 +8,32 @@ import JobPost from "./JobPost";
 
 const JobCategories: FC = () => {
   return (
-    <section className="flex flex-col ">
-      <div>
-        <p className="text-3xl font-bold leading-[160%]">
-          We are the only website that provides this information so that you can
-          find the job that really suits you and the whole planet becomes your
-          playground!
-        </p>
-        <div className="flex flex-col gap-6 items-center py-10">
-          <div className="flex gap-7 ">
-            <JobsButton label="View All" />
-            <JobsButton label="Engineering" />
-            <JobsButton label="Administration" />
-            <JobsButton label="Legal" />
-            <JobsButton label="Content Creator" />
-          </div>
-          <div className="flex gap-7 ">
-            <JobsButton label="Teacher" />
-            <JobsButton label="Sales" />
-            <JobsButton label="Photography" />
-            <JobsButton label="Account" />
-            <JobsButton label="Modelling" />
+    <section className=" h-[1500px] flex flex-col text-white">
+      <div className="bg-[#060d11] absolute left-0 w-full">
+        <div className="px-14 pt-12">
+          <p className="text-3xl font-bold leading-[160%] ">
+            We are the only website that provides this information so that you
+            can find the job that really suits you and the whole planet becomes
+            your playground!
+          </p>
+          <div className="flex flex-col gap-6 items-center py-10">
+            <div className="flex gap-7 ">
+              <JobsButton label="View All" background="white" color="#1d3f56" />
+              <JobsButton label="Engineering" />
+              <JobsButton label="Administration" />
+              <JobsButton label="Legal" />
+              <JobsButton label="Music" />
+            </div>
+            <div className="flex gap-7 mb-6">
+              <JobsButton label="Academics" />
+              <JobsButton label="Sales" />
+              <JobsButton label="Photography" />
+              <JobsButton label="Business" />
+              <JobsButton label="Tech" />
+            </div>
           </div>
         </div>
-        <div className="absolute h-[1px] left-0 bg-[red] w-full"></div>
+        <div className="absolute h-[2px] left-0 bg-[#8e9faa] w-full"></div>
         <JobPost />
       </div>
     </section>

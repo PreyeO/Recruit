@@ -1,18 +1,16 @@
-import {FC} from 'react';
-import { StyledAuthButtton } from '../../Styles/Buttons/AuthButton.styled';
+import { FC } from "react";
+import { StyledAuthButtton } from "../../Styles/Buttons/AuthButton.styled";
 
 interface Props {
-  label:string,
- 
+  label: string;
 }
 
-const AuthButton :FC<Props> = ({label}) =>{
+const AuthButton: FC<Props> = ({ label }) => {
   return (
-    <StyledAuthButtton width='22.5rem' height='56px'>
+    <StyledAuthButtton width="22.5rem" height="56px">
       {label}
-      </StyledAuthButtton>
- 
+    </StyledAuthButtton>
   );
-}
+};
 
-export default AuthButton
+export default AuthButton;

@@ -20,13 +20,18 @@ const HomeBtn: FC<Props> = ({ label, icon }) => {
           />
         );
       case "SideArrow":
-        return <BsFillArrowRightCircleFill size={20} />;
+        return (
+          <BsFillArrowRightCircleFill
+            size={20}
+            style={{ marginLeft: "1rem", marginRight: "0.5rem" }}
+          />
+        );
       default:
         return null;
     }
   };
   return (
-    <button className="rounded-lg bg-white text-primary-btn px-1 py-1 flex items-center text-sm pl-4">
+    <button className=" w-[170px] h-10 rounded-lg bg-white text-primary-btn px-1 py-1 flex items-center text-lg font-bold pl-4 text-center justify-center">
       {label}
       {renderIcon()}
     </button>
