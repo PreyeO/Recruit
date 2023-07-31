@@ -5,7 +5,7 @@ type Props = {};
 
 const JobAds = (props: Props) => {
   return (
-    <div className="flex gap-16">
+    <section className="flex gap-16">
       <div className="flex-1">
         <h2 className="text-6xl font-bold leading-[140%]">
           We’re always here. Employees come and go
@@ -14,12 +14,12 @@ const JobAds = (props: Props) => {
           Discover the optimal match for your startup and get the best results
           together.
         </p>
-      <LandingBtn label="Learn More" />
+        <LandingBtn label="Learn More" />
       </div>
       <div className="flex-1 bg-[#8e9faa] rounded-[20px]">
         <img src={JobAdImg} alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 

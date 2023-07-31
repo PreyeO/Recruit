@@ -5,7 +5,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="py-14 flex flex-col items-center text-center">
+    <section className="py-14 flex flex-col items-center text-center">
       <h1 className="text-6xl font-bold leading-[160%]">
         Unlocking Opportunities Your Ultimate Talent Spotter and Dream Job
         Finder
@@ -20,9 +20,9 @@ const Hero = (props: Props) => {
         <p className="text-xl">Get Started</p>
       </StyledAuthButtton>
       <div className="-mt-20">
-      <img src={HeroImg} alt="hero" />
+        <img src={HeroImg} alt="hero" />
       </div>
-    </div>
+    </section>
   );
 };
 

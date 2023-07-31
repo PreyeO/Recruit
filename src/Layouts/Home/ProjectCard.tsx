@@ -24,7 +24,10 @@ const ProjectCard = (props: Props) => {
         <FaReact size={20} />
         <p className="text-xl font-bold">React Project</p>
       </StyledAuthButtton>
-      <p className="py-7 text-2xl font-bold"> Project Frontend - The best place for travels</p>
+      <p className="py-7 text-2xl font-bold">
+        {" "}
+        Project Frontend - The best place for travels
+      </p>
       <LandingBtn label="View More" />
     </div>
   );
