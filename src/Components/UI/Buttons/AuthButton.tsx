@@ -8,7 +8,7 @@ interface Props {
 
 const AuthButton :FC<Props> = ({label}) =>{
   return (
-    <StyledAuthButtton >
+    <StyledAuthButtton width='22.5rem' height='56px'>
       {label}
       </StyledAuthButtton>
  

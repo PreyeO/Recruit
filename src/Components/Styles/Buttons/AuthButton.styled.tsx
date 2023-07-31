@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const StyledAuthButtton = styled.button`
+export const StyledAuthButtton = styled.button<{width?: string, height?: string}>`
   background: var(--primary-btn-color);
   color: var(--primary-text-color);
-  padding: 0.5rem;
-  width: 22.5rem;
+  /* padding: 0.5rem; */
+  width: ${(props) => props.width};
   border-radius: 0.5rem;
-  height: 56px;
+  height: ${(props) => props.height};
 
   &:hover {
     background: var(--secondary-btn-color);

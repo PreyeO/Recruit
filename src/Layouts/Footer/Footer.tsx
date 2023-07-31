@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-[#181d21] relative">
       <StyledFooter>
         <div className="flex justify-between items-start gap-6 py-20 flex-col lg:flex-row">
-          <h2 className="text-3xl font-bold uppercase">
+          <h2 className="text-5xl font-bold uppercase">
             We’d Like & Love to Help
           </h2>
           <div className="flex flex-col max-w-[515px] gap-10">
