@@ -5,7 +5,8 @@ import Companies from "./Companies";
 import JobAds from "./JobAds";
 import Projects from "./Projects";
 import JobCategories from "./JobCategories";
-import MoreInfo from "./MoreInfo";
+import Advert from "./Advert";
+import Testimonial from "./Testimonial";
 
 // interface Props {
 // }
@@ -18,7 +19,8 @@ const Home: FC = () => {
       <JobAds />
       <Projects />
       <JobCategories />
-      <MoreInfo />
+      <Advert />
+      <Testimonial />
     </ProfileContainer>
   );
 };
