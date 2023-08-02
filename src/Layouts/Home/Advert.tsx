@@ -13,7 +13,7 @@ const Advert: FC = () => {
     <section className="flex flex-col mb-20">
       <div className="bg-[#8E9FAA] h-[600px] pt-10">
         <div className="flex-col justify-center text-center">
-          <h1 className=" text-4xl pb-10">
+          <h1 className=" text-4xl pb-10 w-[25rem] mx-auto leading-[140%]">
             Leverage global world class talented people
           </h1>
 

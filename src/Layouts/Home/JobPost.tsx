@@ -85,7 +85,6 @@ const JobPost: FC = () => {
             <h4>$50K - $60K</h4>
           </div>
         </div>
-
         <StyledAuthButtton
           width="230px"
           height="60px"
