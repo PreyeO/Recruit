@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Home from "../../Layouts/Home/home";
 import Footer from "../../Layouts/Footer/Footer";
+import NavBar from "../../Layouts/NavBar/NavBar";
 
 // interface Props {
 // }
@@ -8,6 +9,7 @@ import Footer from "../../Layouts/Footer/Footer";
 const Landing: FC = () => {
   return (
     <main>
+      <NavBar />
       <Home />
       <Footer />
     </main>

@@ -7,7 +7,7 @@ import VerifyDetails from "./Pages/Authentication/VerifyDetails";
 import CompleteProfile from "./Pages/Authentication/CompleteProfile";
 import AddSocials from "./Pages/Authentication/AddSocials";
 import Profile from "./Pages/ProfilePage/Profile";
-import NavBar from "./Layouts/NavBar/NavBar";
+// import NavBar from "./Layouts/NavBar/NavBar";
 // import Footer from "./Layouts/Footer/Footer";
 // import FooterPreye from "./Layouts/Footer/FooterPreye";
 
@@ -16,7 +16,7 @@ function App() {
     <>
       <GlobalStyles />
       <BrowserRouter>
-        <NavBar />
+        {/* <NavBar /> */}
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/signin" element={<SignIn />} />
