@@ -41,6 +41,58 @@ export const datas = [
         company: "Microsoft",
       },
     ],
+
+    schedules: [
+      {
+        title: "Full-time",
+      },
+      {
+        title: "Part-Time",
+      },
+      {
+        title: "Contract",
+      },
+      {
+        title: "Freelance",
+      },
+      {
+        title: "Internship",
+      },
+      {
+        title: "Aprenticeship",
+      },
+    ],
+    locations: [
+      {
+        title: "On-site",
+      },
+      {
+        title: "Hybrid",
+      },
+      {
+        title: "Remote",
+      },
+      {
+        title: "Anywhere",
+      },
+    ],
+    joblevels: [
+      {
+        title: "Entry Level",
+      },
+      {
+        title: "Mid Level",
+      },
+      {
+        title: "Senior Level",
+      },
+      {
+        title: "Director ",
+      },
+      {
+        title: "VP or above",
+      },
+    ],
   },
 ];
 
@@ -111,5 +163,53 @@ export const works = [
     id: 6,
     title: "Blossom Academy",
     description: "This is an online learning platform for kids.",
+  },
+];
+
+export const jobs = [
+  {
+    id: 1,
+    category: "Design",
+    title: "UI/UX Designer",
+    date: "2 days ago",
+    company: "InVision New York(Remote)",
+    requirements:
+      "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
+  },
+  {
+    id: 2,
+    category: "Admin",
+    title: "Executive Assistant",
+    date: "5 days ago",
+    company: "InVision New York(Remote)",
+    requirements:
+      "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
+  },
+  {
+    id: 3,
+    category: "Developer",
+    title: "Frontend Developer",
+    date: "3 days ago",
+    company: "InVision New York(Remote)",
+    requirements:
+      "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
+  },
+  {
+    id: 4,
+    category: "Legal",
+    title: "Compliance",
+    date: "3 days ago",
+    company: "InVision New York(Remote)",
+    requirements:
+      "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
+  },
+  {
+    id: 5,
+    category: "Sales",
+    title: "Telemarketer",
+    date: "7 days ago",
+    company: "InVision New York(Remote)",
+    requirements:
+      "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
   },
 ];

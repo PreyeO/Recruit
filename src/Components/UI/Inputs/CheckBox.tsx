@@ -1,8 +1,8 @@
 import { FC } from "react";
 
 interface Props {
-  label: string;
-  id: any;
+  label?: string;
+  id?: any;
 }
 
 const Checkbox: FC<Props> = ({ label, id }) => {
