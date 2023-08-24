@@ -9,10 +9,10 @@ const JobList = () => {
   return (
     <section className="mt-6">
       <div className="flex justify-between">
-        <h1 className="text-center text-2xl">Recommended Jobs</h1>
+        <h1 className="text-center text-2xl pb-4">Recommended Jobs</h1>
         <div className="flex gap-2">
           <h3>
-            <span className="font-extralight">Sorted by:</span> Last update{" "}
+            <span className="font-extralight pb-4">Sorted by:</span> Last update{" "}
           </h3>
           <div className="mt-2">
             <BsArrowLeftRight />
@@ -42,7 +42,7 @@ const JobList = () => {
 
                   <h4 className="text-md">{job.company}</h4>
 
-                  <p className="text-md pt-4">{job.requirements}</p>
+                  <p className="text-md pt-4 w-2/3">{job.requirements}</p>
                 </div>
               </div>
             </StyledJobList>

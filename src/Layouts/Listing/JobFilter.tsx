@@ -8,7 +8,7 @@ import { datas } from "../UserProfile/UserData";
 const JobFilter = () => {
   return (
     <div className="hidden lg:block mt-6">
-      <h1 className="text-center text-2xl">Filters</h1>
+      <h1 className="text-center text-2xl pb-4">Filters</h1>
       {datas.map((data) => (
         <div key={data.id} className="flex flex-col justify-center gap-8">
           <StyledProficiencyCard width="260px">
@@ -41,7 +41,7 @@ const JobFilter = () => {
           </StyledProficiencyCard>
 
           <StyledProficiencyCard width="260px">
-            <StyledSkillTitle>Job Level</StyledSkillTitle>
+            <StyledSkillTitle>Experience</StyledSkillTitle>
             <ul>
               {data.joblevels.map((level, index) => (
                 <li

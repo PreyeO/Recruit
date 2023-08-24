@@ -81,6 +81,9 @@ export const datas = [
         title: "Entry Level",
       },
       {
+        title: "Junior Level",
+      },
+      {
         title: "Mid Level",
       },
       {
@@ -180,7 +183,7 @@ export const jobs = [
     id: 2,
     category: "Admin",
     title: "Executive Assistant",
-    date: "5 days ago",
+    date: "3 days ago",
     company: "InVision New York(Remote)",
     requirements:
       "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
@@ -189,22 +192,14 @@ export const jobs = [
     id: 3,
     category: "Developer",
     title: "Frontend Developer",
-    date: "3 days ago",
+    date: "5 days ago",
     company: "InVision New York(Remote)",
     requirements:
       "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
   },
+
   {
     id: 4,
-    category: "Legal",
-    title: "Compliance",
-    date: "3 days ago",
-    company: "InVision New York(Remote)",
-    requirements:
-      "Invision is seeking a highly skilled and motivated Project Manager to join our dynamic team. As a Project Manager, you will be responsible for overseeing and delivering various projects within our organization.",
-  },
-  {
-    id: 5,
     category: "Sales",
     title: "Telemarketer",
     date: "7 days ago",
