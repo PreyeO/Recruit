@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { StyledNavbar } from "../../Components/Styles/Layouts/NavBar.styled";
 import Logo2 from "../../assets/logo2.png";
 import Avatar from "../../assets/avatar.png";
+import { FiMenu } from "react-icons/fi";
 
 const NavBar = () => {
   return (
@@ -23,8 +24,11 @@ const NavBar = () => {
           <Link to="/jobs">About Us</Link>
         </li>
       </ul>
-      <div className="flex gap-4 items-center">
+      <div className="lg:flex gap-4 items-center hidden">
         <img src={Avatar} alt="logo" />
+      </div>
+      <div className="lg:hidden">
+        <FiMenu size={24} />
       </div>
     </StyledNavbar>
   );
