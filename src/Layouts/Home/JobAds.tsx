@@ -5,12 +5,12 @@ type Props = {};
 
 const JobAds = (props: Props) => {
   return (
-    <section className="flex gap-16">
-      <div className="flex-1">
-        <h2 className="text-6xl font-bold leading-[140%]">
+    <section className="flex gap-16 flex-col md:flex-row">
+      <div className="flex-1 text-center md:text-left">
+        <h2 className="text-xl md:text-2xl lg:text-6xl font-bold leading-[140%]">
           We’re always here. Employees come and go
         </h2>
-        <p className="text-xl leading-[160%] pt-6 pb-14">
+        <p className="text-sm lg:text-xl leading-[160%] py-6 lg:pb-14">
           Discover the optimal match for your startup and get the best results
           together.
         </p>

@@ -6,8 +6,8 @@ type Props = {};
 const Projects = (props: Props) => {
   return (
     <section className="my-24 flex flex-col">
-      <h2 className="text-5xl font-bold pb-10">Featured Projects</h2>
-      <div className="flex gap-5 flex-wrap">
+      <h2 className=" text-xl md:text-2xl lg:text-5xl font-bold pb-10">Featured Projects</h2>
+      <div className="flex gap-5 flex-wrap justify-center">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />

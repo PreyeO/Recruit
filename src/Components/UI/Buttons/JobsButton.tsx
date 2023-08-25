@@ -8,10 +8,7 @@ interface Props {
 
 const JobsButton: FC<Props> = ({ label, color, background }) => {
   return (
-    <button
-      className="w-[182px] h-12 border border-[#1d3f56] border-solid rounded-lg bg-[#1d3f56] text-xl font-semibold"
-      style={{ background: background, color: color }}
-    >
+    <button className="whitespace-nowrap h-12 rounded-lg bg-[#1d3f56] md:text-xl font-semibold px-4 hover:bg-white hover:text-[#1d3f56]">
       {label}
     </button>
   );
