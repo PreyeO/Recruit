@@ -15,13 +15,13 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/aboutus">Projects</Link>
+          <Link to="/">Projects</Link>
         </li>
         <li>
-          <Link to="/project">View Jobs</Link>
+          <Link to="/joblisting">View Jobs</Link>
         </li>
         <li>
-          <Link to="/jobs">About Us</Link>
+          <Link to="/">About Us</Link>
         </li>
       </ul>
       <div className="lg:flex gap-4 items-center hidden">

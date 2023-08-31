@@ -37,6 +37,7 @@ const Hero = (props: Props) => {
           showStatus={false}
           infiniteLoop={true}
           interval={5000}
+          transitionTime={500}
         >
           <img src={Carousel1} alt="carousel1" />
           <img src={Carousel2} alt="carousel2" />
