@@ -10,7 +10,7 @@ interface Props {
 
 const Select: FC<Props> = ({ id, type, placeholder }) => {
   return (
-    <div className="relative flex items-center gap-1">
+    <div className="flex-1 relative hidden w-full md:flex items-center gap-1 ">
       <StyledSearchInput
         type={type}
         placeholder={placeholder}

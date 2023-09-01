@@ -10,7 +10,7 @@ interface Props {
 
 const Search: FC<Props> = ({ id, type, placeholder }) => {
   return (
-    <div className="relative flex items-center gap-1">
+    <div className="flex-1 relative flex items-center gap-1 w-full">
       <StyledSearchInput
         type={type}
         placeholder={placeholder}

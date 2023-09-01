@@ -3,7 +3,7 @@ import DualHandleSlider from "./DualHandleSlider"; // Adjust the import path
 
 const SalaryRange: React.FC = () => {
   return (
-    <div>
+    <div className="hidden md:flex flex-1">
       <DualHandleSlider />
     </div>
   );
