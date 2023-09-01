@@ -12,12 +12,12 @@ const JobFilter = () => {
       {datas.map((data) => (
         <div key={data.id} className="flex flex-col justify-center gap-8">
           <StyledProficiencyCard width="260px">
-            <StyledSkillTitle>Schedule</StyledSkillTitle>
+            <StyledSkillTitle fontSize="24px">Schedule</StyledSkillTitle>
             <ul>
               {data.schedules.map((schedule, index) => (
                 <li
                   key={index}
-                  className="bg-white text-black rounded-lg px-2 py-2 flex items-center gap-4 my-2 w-40"
+                  className="text-black rounded-lg px-2 py-2 flex items-center gap-4 my-2 w-40"
                 >
                   <Checkbox />
                   {schedule.title}
@@ -26,12 +26,12 @@ const JobFilter = () => {
             </ul>
           </StyledProficiencyCard>
           <StyledProficiencyCard width="260px">
-            <StyledSkillTitle>Location</StyledSkillTitle>
+            <StyledSkillTitle fontSize="24px">Location</StyledSkillTitle>
             <ul>
               {data.locations.map((location, index) => (
                 <li
                   key={index}
-                  className="bg-white text-black rounded-lg px-2 py-2 flex items-center gap-4 my-2 w-40"
+                  className="text-black rounded-lg px-2 py-2 flex items-center gap-4 my-2 w-40"
                 >
                   <Checkbox />
                   {location.title}
@@ -41,12 +41,12 @@ const JobFilter = () => {
           </StyledProficiencyCard>
 
           <StyledProficiencyCard width="260px">
-            <StyledSkillTitle>Experience</StyledSkillTitle>
+            <StyledSkillTitle fontSize="24px">Experience</StyledSkillTitle>
             <ul>
               {data.joblevels.map((level, index) => (
                 <li
                   key={index}
-                  className="bg-white text-black rounded-lg px-2 py-2 flex items-center gap-4 my-2 w-40"
+                  className="text-black rounded-lg px-2 py-2 flex items-center gap-4 my-2 w-40"
                 >
                   <Checkbox />
                   {level.title}

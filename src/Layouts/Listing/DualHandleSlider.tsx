@@ -11,11 +11,9 @@ const DualHandleSlider: React.FC = () => {
 
   return (
     <div className="flex flex-col">
+      <h3>The Salary</h3>
       <div className="flex gap-2">
-        <div className="px-3">
-          <h3>Salary Range</h3>
-        </div>
-        <div className="flex">
+        <div className="flex items-center">
           <h1>$</h1>
           <SalaryInput
             value={salaryRange[0]}
@@ -25,7 +23,7 @@ const DualHandleSlider: React.FC = () => {
           />
         </div>
 
-        <div className="flex">
+        <div className="flex items-center">
           <h1>$</h1>
           <SalaryInput
             value={salaryRange[1]}

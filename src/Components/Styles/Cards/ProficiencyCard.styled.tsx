@@ -12,8 +12,8 @@ export const StyledProficiencyCard = styled.div<{ width?: string }>`
   align-items: center;
 `;
 
-export const StyledSkillTitle = styled.h2`
+export const StyledSkillTitle = styled.h2<{ fontSize?: string }>`
   font-weight: bold;
-  font-size: 28px;
+  font-size: ${(props) => props.fontSize};;
   text-align: left;
 `;
