@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { StyledAuthButtton } from "../../Components/Styles/Buttons/AuthButton.styled";
 import HeroImg from "../../assets/hero.png";
 import Carousel1 from "../../assets/caro1.png";
@@ -6,10 +7,24 @@ import Carousel3 from "../../assets/caro3.png";
 import Carousel4 from "../../assets/caro4.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Modal from "./Modal";
 
 type Props = {};
 
 const Hero = (props: Props) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  const handleSelection = (selection: string) => {
+    console.log(`Selected option: ${selection}`);
+  };
+
   return (
     <section className="my-10 lg:py-14 flex flex-col items-center text-center">
       <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold leading-[160%]">
@@ -22,7 +37,11 @@ const Hero = (props: Props) => {
         talent spotter, skillfully connecting you with dream job opportunities
         that align with your aspirations.
       </p>
-      <StyledAuthButtton width="194px" height="48px">
+      <StyledAuthButtton
+        width="194px"
+        height="48px"
+        onClick={handleGetStartedClick}
+      >
         <p className="text-xl">Get Started</p>
       </StyledAuthButtton>
       <figure className="-mt-10 lg:-mt-20 hidden md:block">
@@ -45,6 +64,11 @@ const Hero = (props: Props) => {
           <img src={Carousel4} alt="carousel4" />
         </Carousel>
       </figure>
+      {showModal && (
+        <div className="overlay" onClick={handleCloseModal}>
+          <Modal onClose={handleCloseModal} onSelection={handleSelection} />
+        </div>
+      )}
     </section>
   );
 };
