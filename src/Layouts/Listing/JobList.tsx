@@ -63,11 +63,7 @@ const JobList = () => {
           </li>
         ))}
       </ul>
-      {showFilter && (
-        <JobFilterMobile
-          toggleFilter={toggleFilter}
-        />
-      )}
+      {showFilter && <JobFilterMobile toggleFilter={toggleFilter} />}
     </section>
   );
 };

@@ -1,16 +1,23 @@
 import React from "react";
 import ModalCard from "../../Components/UI/Cards/ModalCard";
-import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
+import { RiUserFill, RiUserSearchFill } from "react-icons/ri";
+
+import { useNavigate } from "react-router-dom";
 
 type ModalProps = {
   onClose: () => void;
-  onSelection: (selection: string) => void;
 };
 
-const Modal: React.FC<ModalProps> = ({ onClose, onSelection }) => {
+const Modal: React.FC<ModalProps> = ({ onClose }) => {
+  const navigate = useNavigate();
   const handleSelection = (selection: string) => {
-    onSelection(selection);
     onClose();
+
+    if (selection === "talent") {
+      navigate("/signup");
+    } else if (selection === "recruiter") {
+      navigate("/signup");
+    }
   };
 
   return (
@@ -27,7 +34,7 @@ const Modal: React.FC<ModalProps> = ({ onClose, onSelection }) => {
             onClick={() => handleSelection("talent")}
             className="cursor-pointer"
           >
-            <ModalCard icon={<AiOutlineSearch size={35} />} title="Talent" />
+            <ModalCard icon={<RiUserFill size={35} />} title="Talent" />
           </div>
           <div className="pt-6">
             <h3>Or</h3>
@@ -36,7 +43,10 @@ const Modal: React.FC<ModalProps> = ({ onClose, onSelection }) => {
             onClick={() => handleSelection("recruiter")}
             className="cursor-pointer"
           >
-            <ModalCard icon={<AiOutlineUser size={35} />} title="Recruiter" />
+            <ModalCard
+              icon={<RiUserSearchFill size={35} />}
+              title="Recruiter"
+            />
           </div>
         </div>
       </div>
