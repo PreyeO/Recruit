@@ -15,6 +15,12 @@ export default {
         robotoMono: ["Roboto Mono", "monospace"],
         plusJakarta: ["Plus Jakarta Sans", "sans-serif"],
       },
+      keyframes: {
+        slide: {
+          "0%": { right: "-192px" },
+          "100%": { right: "0" },
+        },
+      },
     },
   },
   plugins: [],

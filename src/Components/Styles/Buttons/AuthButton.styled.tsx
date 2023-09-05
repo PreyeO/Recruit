@@ -10,7 +10,7 @@ export const StyledAuthButtton = styled.button<{
   width: ${(props) => props.width};
   border-radius: 0.5rem;
   height: ${(props) => props.height};
-  z-index: 999; /* Adjust as needed */
+  z-index: 10; /* Adjust as needed */
 
   &:hover {
     background: var(--secondary-btn-color);
