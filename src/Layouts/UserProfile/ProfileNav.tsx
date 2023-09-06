@@ -16,7 +16,7 @@ const ProfileNav = ({ links }: Props) => {
   return (
     <>
       <div className="flex justify-between h-11 border-b-[1px] border-[#f1f1f1] border-solid">
-        <div className="gap-4 lg:gap-20 text-dark-gray flex items-start relative">
+        <div className="gap-4 sm:gap-10 md:gap-20 text-dark-gray flex items-start relative">
           {navWER.map((link, index) => (
             <div
               className={`flex gap-2 items-center cursor-pointer hover:text-primary-dark ${
@@ -28,8 +28,9 @@ const ProfileNav = ({ links }: Props) => {
               onClick={() => cycleLinks(index)}
               key={link.id}
             >
-              {link.icon}
-              <p className="lg:text-2xl font-bold">{link.name}</p>
+              <span className="hidden sm:block">{link.icon}</span>
+
+              <p className="md:text-2xl font-bold">{link.name}</p>
             </div>
           ))}
         </div>

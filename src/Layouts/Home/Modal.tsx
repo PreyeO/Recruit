@@ -21,10 +21,10 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold mb-4">Welcome to The Xhibit</h2>
-        <p className="leading-[150%] max-w-[450px] text-sm lg:text-xl">
+    <div className="w-full md:w-[800px] z-50">
+      <div className="bg-white py-14 px-4 rounded-[20px] mx-8">
+        <h2 className="text-xl md:text-3xl font-semibold mb-4">Welcome to The Xhibit</h2>
+        <p className="leading-[150%] mx-auto max-w-[450px] text-sm lg:text-xl">
           Where Boundless Opportunities Converge with Exceptional Talent to
           Forge Success!
         </p>
@@ -36,7 +36,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
           >
             <ModalCard icon={<RiUserFill size={35} />} title="Talent" />
           </div>
-          <div className="pt-6">
+          <div>
             <h3>Or</h3>
           </div>
           <div

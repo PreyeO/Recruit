@@ -6,18 +6,25 @@ const ProfileInfo = () => {
   return (
     <section className="mb-16">
       <div className="absolute w-full h-20 md:h-40 lg:h-[280px] bg-primary-btn left-0 z-[-1]"></div>
-      <div className=" pt-10 md:pt-20 lg:pt-40 flex flex-col lg:flex-row lg:items-end gap-4 md:gap-7">
+      <div className=" pt-10 md:pt-20 lg:pt-44 flex flex-col lg:flex-row lg:items-end gap-4 md:gap-7">
         <div className="flex items-end justify-between">
-        <img src={ProfilePic} alt="logo" className="lg:w-[225px] w-[64px] md:w-32" />
-        <div className="flex lg:hidden gap-2 items-center justify-items-end -mb-2 md:mb-0">
-          <img src={EditTwo} alt="edit" className="w-4 md:w-7" />
-          <p className="text-primary-btn md:text-2xl">Edit</p>
-        </div>
+          <figure className="lg:w-[225px] w-[64px] md:w-32">
+            <img src={ProfilePic} alt="logo" />
+          </figure>
+
+          <div className="flex lg:hidden gap-2 items-center justify-items-end -mb-2 md:mb-0">
+            <img src={EditTwo} alt="edit" className="w-4 md:w-7" />
+            <p className="text-primary-btn md:text-2xl">Edit</p>
+          </div>
         </div>
         <div className="flex gap-2 md:gap-7 h-[90px]">
           <div className="basis-1/3">
-            <h2 className="font-bold md:text-3xl text-dark-gray">Ronald Richards</h2>
-            <p className="pt-1 text-light-gray text-xs sm:text-base">Lafayette, California</p>
+            <h2 className="font-bold md:text-3xl text-dark-gray">
+              Ronald Richards
+            </h2>
+            <p className="pt-1 text-light-gray text-xs sm:text-base">
+              Lafayette, California
+            </p>
           </div>
           <div className="w-[3px] h-20 bg-light-gray" />
           <div className="md:max-w-[544px] basis-2/3">

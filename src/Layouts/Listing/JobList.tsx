@@ -20,14 +20,14 @@ const JobList = () => {
         <h1 className="md:text-center text-bold md:text-2xl">
           Recommended Jobs
         </h1>
-        <div className="flex gap-3 items-center">
-          <h3 className="hidden md:block">
+        <div className="flex gap-3 items-center cursor-pointer">
+          <h3 className="hidden lg:block">
             <span className="font-extralight pb-4">Sorted by:</span>Last update
           </h3>
           <div className="flex items-center gap-3">
             <BsArrowLeftRight />
             <p
-              className="block md:hidden"
+              className="block lg:hidden"
               onClick={() => {
                 setShowFilter(true);
               }}

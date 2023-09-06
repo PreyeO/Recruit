@@ -51,7 +51,7 @@ const NavBar = () => {
           <img src={Avatar} alt="logo" />
         </div>
         <div
-          className="lg:hidden"
+          className="lg:hidden cursor-pointer"
           onClick={() => {
             setShowSidebar(!showSidebar);
           }}
