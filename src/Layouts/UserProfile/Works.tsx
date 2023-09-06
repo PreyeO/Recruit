@@ -5,7 +5,7 @@ import Projectlogo from "../../assets/Project.svg";
 const Works = () => {
   return (
     <section className="mt-6">
-      <ul className="flex gap-9 flex-wrap">
+      <ul className="flex gap-9 items-center flex-col sm:flex-row sm:flex-wrap">
         {works.map((work) => (
           <li key={work.id}>
             <StyledProficiencyCard width="280px" className="h-[420px]">

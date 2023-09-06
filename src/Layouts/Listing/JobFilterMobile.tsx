@@ -12,7 +12,7 @@ type Props = {
 
 const JobFilterMobile = ({ toggleFilter }: Props) => {
   return (
-    <div className="bg-blue-100 px-3 py-6 flex flex-col rounded-lg gap-5 absolute top-52 left-1 w-96">
+    <div className="bg-white shadow-lg border border-solid border-gray-200 px-3 py-6 flex flex-col rounded-lg gap-5 absolute top-52 w-96 mx-auto">
       <div className="flex justify-between items-center">
         <h4 className="text-xl">Filter</h4>
         <div className="cursor-pointer" onClick={toggleFilter}>
