@@ -10,14 +10,22 @@ type Props = {
     path: string;
   }[];
   close: () => void;
+  isOpen: boolean;
 };
 
-const Sidebar: React.FC<Props> = ({ links, close }) => {
+const Sidebar: React.FC<Props> = ({ links, close, isOpen }) => {
   return (
-    <div className="absolute top-0 right-0 bg-white w-48 h-screen z-50 px-6 pt-6 flex flex-col animate-[slide_300ms_ease-in-out] shadow-2xl">
+    // <div className="absolute top-0 right-0 bg-white w-48 h-screen z-50 px-6 pt-6 flex flex-col animate-[slide_300ms_ease-in-out] shadow-2xl">
+    <div
+      className={`absolute top-0 right-0 bg-white w-48 h-screen z-50 px-6 pt-6 flex flex-col transform ${
+        isOpen
+          ? "animate-[slide_300ms_ease-in-out]"
+          : "animate-[slideReverse-300ms-ease-in-out]"
+      } shadow-2xl`}
+    >
       <div className="flex justify-between items-center mb-10">
         <img src={Avatar} alt="logo" className="w-10" />
-        <div onClick={close} className="cursor-pointer">
+        <div onClick={close} className="cursor-pointer  ">
           <FaTimes size={20} />
         </div>
       </div>

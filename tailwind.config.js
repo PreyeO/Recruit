@@ -20,6 +20,10 @@ export default {
           "0%": { right: "-192px" },
           "100%": { right: "0" },
         },
+        slideReverse: {
+          "0%": { right: "0" },
+          "100%": { right: "-192px" },
+        },
       },
     },
   },

@@ -11,7 +11,7 @@ const NavBar = () => {
 
   const closeSideBar = () => {
     setShowSidebar(false);
- };
+  };
 
   const links = [
     {
@@ -59,7 +59,10 @@ const NavBar = () => {
           <FiMenu size={24} />
         </div>
       </StyledNavbar>
-      {showSidebar && <Sidebar close={closeSideBar} links={links} />}
+
+      {showSidebar && (
+        <Sidebar close={closeSideBar} links={links} isOpen={showSidebar} />
+      )}
     </>
   );
 };
