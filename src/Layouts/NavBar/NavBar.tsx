@@ -26,10 +26,10 @@ const NavBar = () => {
       name: "View Jobs",
       path: "/joblisting",
     },
-    {
-      name: "About Us",
-      path: "/",
-    },
+    // {
+    //   name: "Profile",
+    //   path: "/profile",
+    // },
   ];
   return (
     <>
@@ -48,7 +48,9 @@ const NavBar = () => {
           ))}
         </ul>
         <div className="lg:flex gap-4 items-center hidden">
-          <img src={Avatar} alt="logo" />
+          <Link to="/profile">
+            <img src={Avatar} alt="logo" />
+          </Link>
         </div>
         <div
           className="lg:hidden cursor-pointer"

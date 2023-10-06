@@ -29,7 +29,9 @@ const SigninForm: FC = () => {
         <PasswordReset label={"Forgot Password"} />
       </div>
 
-      <AuthButton label={"Login"} />
+      <Link to="./profile">
+        <AuthButton label={"Login"} />
+      </Link>
       <div className="flex flex-row gap-2 justify-center">
         <AuthSpan title={"Don't have an account? "} />
         <Link to="/signup" className="text-blue-500 pt-1">

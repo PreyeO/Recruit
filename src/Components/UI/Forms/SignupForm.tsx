@@ -46,7 +46,9 @@ const SignupForm: FC = () => {
         <Checkbox label={"Agree to Terms and Policy"} id="id" />
         <PasswordReset label={"Forgot Password"} />
       </div>
-      <AuthButton label={"Continue"} />
+      <Link to="/profile">
+        <AuthButton label={"Continue"} />
+      </Link>
       <div className="flex flex-row gap-2 justify-center">
         <AuthSpan title={"Already have an account? "} />
         <Link to="/signin" className="text-blue-500 pt-1">

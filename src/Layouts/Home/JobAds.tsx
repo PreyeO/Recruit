@@ -1,5 +1,6 @@
 import LandingBtn from "../../Components/UI/Buttons/LandingBtn";
 import JobAdImg from "../../assets/jobAd.png";
+import { Link } from "react-router-dom";
 
 // type Props = {};
 
@@ -14,7 +15,10 @@ const JobAds = () => {
           Discover the optimal match for your startup and get the best results
           together.
         </p>
-        <LandingBtn label="Learn More" />
+        <Link to="/joblisting">
+          {" "}
+          <LandingBtn label="Learn More" />
+        </Link>
       </div>
       <div className="flex-1 bg-[#8e9faa] rounded-[20px]">
         <img src={JobAdImg} alt="" />

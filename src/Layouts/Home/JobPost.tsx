@@ -2,6 +2,7 @@ import { FC } from "react";
 import AuthTitle from "../../Components/UI/Titles/AuthTitle";
 import HomeBtn from "../../Components/UI/Buttons/HomeBtn";
 import { AiOutlineDollar } from "react-icons/ai";
+import { Link } from "react-router-dom";
 // import USD from "../../assets/usd.png";
 
 // interface Props {
@@ -16,7 +17,9 @@ const JobPost: FC = () => {
         <div className="flex justify-between">
           <AuthTitle title="Product Manager" />
           <div className="hidden md:block">
-            <HomeBtn label="Apply" icon="SideArrow" />
+            <Link to="/joblisting">
+              <HomeBtn label="Apply" icon="SideArrow" />
+            </Link>
           </div>
         </div>
         <div className="flex gap-6 text-sm md:text-xl py-4 md:py-6 font-bold">
@@ -40,8 +43,10 @@ const JobPost: FC = () => {
           <h4>$50K - $60K</h4>
         </div>
         <div className="md:hidden block">
+          <Link to="/joblisting">
             <HomeBtn label="Apply" icon="SideArrow" />
-          </div>
+          </Link>
+        </div>
       </div>
     </section>
   );
