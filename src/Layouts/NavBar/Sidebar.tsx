@@ -19,8 +19,8 @@ const Sidebar: React.FC<Props> = ({ links, close, isOpen }) => {
     <div
       className={`absolute top-0 right-0 bg-white w-48 h-screen z-50 px-6 pt-6 flex flex-col transform ${
         isOpen
-          ? "animate-[slide_300ms_ease-in-out]"
-          : "animate-[slideReverse-300ms-ease-in-out]"
+          ? "animate-[slide_300ms_ease-in-out] "
+          : "animate-[slideReverse_300ms_ease-in-out] "
       } shadow-2xl`}
     >
       <div className="flex justify-between items-center mb-10">

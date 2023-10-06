@@ -4,9 +4,9 @@ import ProjectImg from "../../assets/Project.svg";
 import { StyledAuthButtton } from "../../Components/Styles/Buttons/AuthButton.styled";
 import LandingBtn from "../../Components/UI/Buttons/LandingBtn";
 
-type Props = {};
+// type Props = {};
 
-const ProjectCard = (props: Props) => {
+const ProjectCard = () => {
   return (
     <div className="px-5 py-6 border border-[#b4bfc7] border-solid rounded-2xl w-40 md:w-80">
       <div className="md:flex gap-2 items-center hidden pb-7">

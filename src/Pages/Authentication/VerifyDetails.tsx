@@ -3,9 +3,7 @@ import AuthButton from "../../Components/UI/Buttons/AuthButton";
 import VerifyDetailsForm from "../../Components/UI/Forms/VerifyDetailsForm";
 import { LineNav, TimelineNav } from "./TimelineNav";
 
-type Props = {};
-
-const VerifyDetails = (props: Props) => {
+const VerifyDetails = () => {
   return (
     <Container>
       <TimelineNav />

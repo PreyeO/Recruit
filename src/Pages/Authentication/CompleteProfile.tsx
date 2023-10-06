@@ -3,9 +3,9 @@ import { Container } from "../../Components/Styles/General/Container.styled";
 import AuthButton from "../../Components/UI/Buttons/AuthButton";
 import CompleteProfileForm from "../../Components/UI/Forms/CompleteProfileForm";
 
-type Props = {};
+// type Props = {};
 
-const CompleteProfile = (props: Props) => {
+const CompleteProfile = () => {
   return (
     <Container>
       <TimelineNav />

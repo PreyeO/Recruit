@@ -2,10 +2,10 @@ import { BsRecordCircleFill, BsRecordCircle } from "react-icons/bs";
 import { HiCheckCircle } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
 
-type Props = {};
+// type Props = {};
 
-export const TimelineNav = (props: Props) => {
-  let location = useLocation();
+export const TimelineNav = () => {
+  const location = useLocation();
   return (
     <div className="bg-primary-btn text-white border-8 basis-1/3 pt-[75px] md:flex flex-col gap-16 rounded-br-[82px] hidden pl-5">
       <div className="relative mx-auto w-full max-w-[300px]">
@@ -60,7 +60,7 @@ export const TimelineNav = (props: Props) => {
 };
 
 export const LineNav = () => {
-  let location = useLocation();
+  const location = useLocation();
   return (
     <div className="flex gap-7">
       <div

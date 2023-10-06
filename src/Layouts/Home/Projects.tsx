@@ -1,12 +1,14 @@
 import { StyledAuthButtton } from "../../Components/Styles/Buttons/AuthButton.styled";
 import ProjectCard from "./ProjectCard";
 
-type Props = {};
+// type Props = {};
 
-const Projects = (props: Props) => {
+const Projects = () => {
   return (
     <section className="my-24 flex flex-col">
-      <h2 className=" text-xl md:text-2xl lg:text-5xl font-bold pb-10">Featured Projects</h2>
+      <h2 className=" text-xl md:text-2xl lg:text-5xl font-bold pb-10">
+        Featured Projects
+      </h2>
       <div className="flex gap-5 flex-wrap justify-center">
         <ProjectCard />
         <ProjectCard />
