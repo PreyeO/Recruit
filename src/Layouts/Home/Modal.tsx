@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 type ModalProps = {
   onClose: () => void;
+  onSelection: (selection: string) => void;
 };
 
 const Modal: React.FC<ModalProps> = ({ onClose }) => {
@@ -23,7 +24,9 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
   return (
     <div className="w-full md:w-[800px] z-50">
       <div className="bg-white py-14 px-4 rounded-[20px] mx-8">
-        <h2 className="text-xl md:text-3xl font-semibold mb-4">Welcome to The Xhibit</h2>
+        <h2 className="text-xl md:text-3xl font-semibold mb-4">
+          Welcome to The Xhibit
+        </h2>
         <p className="leading-[150%] mx-auto max-w-[450px] text-sm lg:text-xl">
           Where Boundless Opportunities Converge with Exceptional Talent to
           Forge Success!

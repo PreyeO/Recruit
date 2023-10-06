@@ -9,9 +9,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Modal from "./Modal";
 
-type Props = {};
+// type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleGetStartedClick = () => {

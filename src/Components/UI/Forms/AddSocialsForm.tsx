@@ -1,8 +1,6 @@
 import TextInput from "../Inputs/TextInput";
 
-type Props = {};
-
-const AddSocialsForm = (props: Props) => {
+const AddSocialsForm = () => {
   return (
     <form className="flex flex-col gap-8">
       <TextInput

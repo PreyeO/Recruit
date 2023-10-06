@@ -1,8 +1,6 @@
 import TextInput from "../Inputs/TextInput";
 
-type Props = {};
-
-const CompleteProfileForm = (props: Props) => {
+const CompleteProfileForm = () => {
   return (
     <form className="flex flex-col gap-8">
       <div className="flex flex-col relative">

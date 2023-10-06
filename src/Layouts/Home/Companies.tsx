@@ -6,9 +6,9 @@ import Tesla from "../../assets/tesla.png";
 // import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-type Props = {};
+// type Props = {};
 
-const Companies = (props: Props) => {
+const Companies = () => {
   const Tcompanies = [Google, Airbnb, Flutterwave, Binance, Tesla];
 
   return (
@@ -16,14 +16,14 @@ const Companies = (props: Props) => {
       <div className="bg-[#060d11] h-52 absolute left-0 w-full -z-10" />
       <div className="text-3xl text-white text-center">Trusted By</div>
       <div className="flex gap-4 md:gap-6 h-[42px] flex-wrap justify-center">
-          {Tcompanies.map((company) => (
-            <img
-              src={company}
-              alt={company}
-              key={company}
-              className="w-[80px] md:w-[120px] lg:w-[150px] object-contain"
-            />
-          ))}
+        {Tcompanies.map((company) => (
+          <img
+            src={company}
+            alt={company}
+            key={company}
+            className="w-[80px] md:w-[120px] lg:w-[150px] object-contain"
+          />
+        ))}
       </div>
     </section>
   );

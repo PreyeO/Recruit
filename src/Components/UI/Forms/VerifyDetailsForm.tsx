@@ -1,8 +1,6 @@
 import TextInput from "../Inputs/TextInput";
 
-type Props = {};
-
-const VerifyDetailsForm = (props: Props) => {
+const VerifyDetailsForm = () => {
   return (
     <form className="flex flex-col gap-8">
       <div className="flex relative">

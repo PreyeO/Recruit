@@ -1,9 +1,9 @@
 import LandingBtn from "../../Components/UI/Buttons/LandingBtn";
 import JobAdImg from "../../assets/jobAd.png";
 
-type Props = {};
+// type Props = {};
 
-const JobAds = (props: Props) => {
+const JobAds = () => {
   return (
     <section className="flex gap-16 flex-col md:flex-row">
       <div className="flex-1 text-center md:text-left">
